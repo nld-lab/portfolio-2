@@ -1,5 +1,6 @@
 import { FileDown, Mail } from "lucide-react";
 import img from "../assets/image.png";
+import cv from "../assets/CV NICOLAS DETEH.pdf";
 
 const Home = () => {
   return (
@@ -22,7 +23,8 @@ const Home = () => {
             Contact moi
           </a>
           <a
-            href="#"
+            href={cv}
+            download
             className="flex  w-full justify-center gap-2 btn btn-secondary md:w-fit shadow-2xl shadow-secondary"
           >
             <FileDown />
