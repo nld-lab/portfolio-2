@@ -1,0 +1,32 @@
+
+@keyframes spin{
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.carousel {
+    width: 80%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    margin: auto;
+}
+
+.carousel ::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel .group {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    animation: spin 10s linear infinite;
+    padding-right: 1em;
+}
+
+

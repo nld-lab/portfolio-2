@@ -4,6 +4,7 @@ import img2 from "../assets/projects/1.png";
 import img3 from "../assets/projects/2.png";
 import img4 from "../assets/projects/3.png";
 import img5 from "../assets/projects/5.png";
+import img6 from "../assets/projects/6.png";
 
 const projects = [
   {
@@ -53,6 +54,16 @@ const projects = [
     repoLink: "#",
     demoLink: "https://tictactoe-nico-le-dev.vercel.app/",
     image: img5,
+  },
+  {
+    id: 6,
+    title: "Memory Card Game",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+    technologies: ["React", "Tailwind CSS"],
+    repoLink: "#",
+    demoLink: "https://memory-card-black-two.vercel.app/",
+    image: img6,
   },
 ];
 

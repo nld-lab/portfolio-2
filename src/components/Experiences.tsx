@@ -8,6 +8,7 @@ import imgTAILWIND from "../assets/techno/tailwind.png";
 import imgFIGMA from "../assets/techno/figma.png";
 import imgGIT from "../assets/techno/git.png";
 import imgGITHUB from "../assets/techno/github.png";
+import "./experiences.css";
 
 const skills = [
     { id: 1, name: "HTML", image: imgHTML },
@@ -25,18 +26,32 @@ const Experiences = ()=>{
     return(
         <div className="py-30" id="experiences">
             <Title title={"Mes experiences"}/>
-            <div>
-                <div className=" flex flex-wrap justify-center items-center gap-4 md:w-96 m-auto bg-base-300 p-5 rounded-lg shadow-lg ">
+            <div className="carousel mt-10">
+                <div className="group">
                     {
                         skills.map((skill)=>(
                             <div key={skill.id} className=" flex flex-col items-center">
-                                <div className=" h-15 w-15 ">
-                                    <img src={skill.image} alt={skill.name} className="object-cover w-full h-full"/>
+                                <div className=" h-20 w-20 flex items-center justify-center ">
+                                    <img src={skill.image} alt={skill.name} className="object-cover w-10 h-10"/>
                                 </div>
                                 <span className=" text-sm mt-2">{skill.name}</span>
                             </div>
                         ))
                     }
+                    
+                </div>
+                <div className="group" aria-hidden>
+                    {
+                        skills.map((skill)=>(
+                            <div key={skill.id} className=" flex flex-col items-center">
+                                <div className=" h-20 w-20 flex items-center justify-center ">
+                                    <img src={skill.image} alt={skill.name} className="object-cover w-10 h-10"/>
+                                </div>
+                                <span className=" text-sm mt-2">{skill.name}</span>
+                            </div>
+                        ))
+                    }
+                    
                 </div>
             </div>
         </div>
