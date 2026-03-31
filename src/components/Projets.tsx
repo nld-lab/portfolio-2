@@ -5,8 +5,53 @@ import img3 from "../assets/projects/2.png";
 import img4 from "../assets/projects/3.png";
 import img5 from "../assets/projects/5.png";
 import img6 from "../assets/projects/6.png";
+import img7 from "../assets/projects/7.png";
+import img8 from "../assets/projects/8.png";
+import img9 from "../assets/projects/9.png";
+import img10 from "../assets/projects/10.png";
+import { motion } from "motion/react";
 
 const projects = [
+  {
+    id: 9,
+    title: "Application de covoiturage universitaire",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+    technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+    repoLink: "#",
+    demoLink: "https://github.com/nicostar-lab/sameway",
+    image: img9,
+  },
+  {
+    id: 7,
+    title: "Application de chat en temps réel",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+    technologies: ["React", "Tailwind CSS", "Socket.IO", "Node.js", "MongoDB"],
+    repoLink: "#",
+    demoLink: "https://chat-web-rust-seven.vercel.app/",
+    image: img7,
+  },
+  {
+    id: 10,
+    title: "Maquette de l'appliation de covoiturage universitaire",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+    technologies: ["Figma"],
+    repoLink: "#",
+    demoLink: "#",
+    image: img10,
+  },
+  {
+    id: 8,
+    title: "Application de gestion de club video",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+    technologies: ["Java", "JavaFX", "MySQL"],
+    repoLink: "#",
+    demoLink: "https://github.com/nicostar-lab/club-video",
+    image: img8,
+  },
   {
     id: 1,
     title: "Gestionnaire de tâches",
@@ -73,7 +118,10 @@ const Projets = () => {
       <Title title={"Mes projets"} />
       <div className=" grid md:grid-cols-3 gap-4">
         {projects.map((project) => (
-          <a
+          <motion.a
+            initial={{ opacity: 0, y: 200 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
             href={project.demoLink}
             target="blank"
             rel="noopener noreferrer"
@@ -117,7 +165,7 @@ const Projets = () => {
             <div></div>
             <div></div>
             <div></div>
-          </a>
+          </motion.a>
         ))}
       </div>
     </div>

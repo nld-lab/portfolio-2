@@ -1,10 +1,18 @@
 import Title from "./Title";
+import { motion } from "motion/react";
 
 const Contact = () => {
   return (
     <div className=" flex justify-center items-center flex-col p-10" id="contact">
         <Title title={"Contactez moi"}/>
-      <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col w-full gap-4 md:w-1/3 p-5 bg-base-300 rounded-lg shadow-lg my-10">
+      <motion.form
+        initial={{ opacity: 0, y: 200 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        className="flex flex-col w-full gap-4 md:w-1/3 p-5 bg-base-300 rounded-lg shadow-lg my-10"
+      >
       <input type="hidden" name="access_key" value="6e6bbde7-fa3b-4b76-8b40-baee5266a9bf"></input>
         <div>
           <label >Nom</label> <br />
@@ -31,7 +39,7 @@ const Contact = () => {
         <textarea name="message" className=" textarea resize-none w-full rounded-sm" placeholder="Message..." required></textarea>
 
         <button className="btn btn-secondary w-full rounded-sm">Envoyer</button>
-      </form>
+      </motion.form>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Navbar = () => {
       <ul className="hidden md:flex space-x-4 items-center ">
         <li className="btn btn-ghost"><a href="#home">Accueil</a> </li>
         <li className="btn btn-ghost"> <a href="#about">A propos</a> </li>
-        <li className="btn btn-ghost"><a href="#experiences">Mes experiences</a></li>
+        <li className="btn btn-ghost"><a href="#experiences">Mes compétences</a></li>
         <li className="btn btn-ghost"><a href="#projets">Mes projets</a></li>
         
         <li>
