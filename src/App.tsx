@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="bg-grid md:px-[15%] md:h-screen flex items-center justify-center">
+      <div className="md:px-[15%] md:h-screen flex items-center justify-center">
       <Home />
       </div>
       {/* <BeamsBackground className="relative z-0" intensity="medium">

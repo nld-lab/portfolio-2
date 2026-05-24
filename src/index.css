@@ -3,17 +3,3 @@
   themes: forest --default, emerald;
 }
 
-.bg-grid {
-  background-image: linear-gradient(
-      to right,
-      hsl(var(--bc) / 0.08) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to bottom,
-      hsl(var(--bc) / 0.08) 1px,
-      transparent 1px
-    );
-  background-size: 32px 32px;
-  background-position: top left;
-}
