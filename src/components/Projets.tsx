@@ -27,7 +27,7 @@ const projects = [
     title: "Application de chat en temps réel",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["React", "Tailwind CSS", "Socket.IO", "Node.js", "MongoDB"],
+    technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
     repoLink: "#",
     demoLink: "https://chat-web-rust-seven.vercel.app/",
     image: img7,
@@ -39,7 +39,7 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
     technologies: ["Figma"],
     repoLink: "#",
-    demoLink: "#",
+    demoLink: "https://www.figma.com/proto/0nF5KMjUjckEU24MHslueQ/covoiturage?node-id=1-45&viewport=-391%2C304%2C0.22&t=Gu045YzkoqXvkiZs-1&scaling=contain&content-scaling=fixed&page-id=0%3A1",
     image: img10,
   },
   {
@@ -62,16 +62,16 @@ const projects = [
     demoLink: "https://to-do-list-nico-le-dev-15.vercel.app/",
     image: img1,
   },
-  {
-    id: 2,
-    title: "Calculateur de poids",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["JavaScript", "HTML", "Tailwind CSS"],
-    repoLink: "#",
-    demoLink: "https://planets-tau-orcin.vercel.app/",
-    image: img2,
-  },
+  // {
+  //   id: 2,
+  //   title: "Calculateur de poids",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+  //   technologies: ["JavaScript", "HTML", "Tailwind CSS"],
+  //   repoLink: "#",
+  //   demoLink: "https://planets-tau-orcin.vercel.app/",
+  //   image: img2,
+  // },
   {
     id: 3,
     title: "Quiz Game",
@@ -80,36 +80,36 @@ const projects = [
     demoLink: "https://quiz-app-nine-chi-87.vercel.app/",
     image: img3,
   },
-  {
-    id: 4,
-    title: "Chercheur de drapeaux",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["JavaScript", "API"],
-    repoLink: "#",
-    demoLink: "https://country-search-self.vercel.app/",
-    image: img4,
-  },
-  {
-    id: 5,
-    title: "Tic-tac-toe Game",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["React", "Tailwind CSS"],
-    repoLink: "#",
-    demoLink: "https://tictactoe-nico-le-dev.vercel.app/",
-    image: img5,
-  },
-  {
-    id: 6,
-    title: "Memory Card Game",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["React", "Tailwind CSS"],
-    repoLink: "#",
-    demoLink: "https://memory-card-black-two.vercel.app/",
-    image: img6,
-  },
+  // {
+  //   id: 4,
+  //   title: "Chercheur de drapeaux",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+  //   technologies: ["JavaScript", "API"],
+  //   repoLink: "#",
+  //   demoLink: "https://country-search-self.vercel.app/",
+  //   image: img4,
+  // },
+  // {
+  //   id: 5,
+  //   title: "Tic-tac-toe Game",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+  //   technologies: ["React", "Tailwind CSS"],
+  //   repoLink: "#",
+  //   demoLink: "https://tictactoe-nico-le-dev.vercel.app/",
+  //   image: img5,
+  // },
+  // {
+  //   id: 6,
+  //   title: "Memory Card Game",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+  //   technologies: ["React", "Tailwind CSS"],
+  //   repoLink: "#",
+  //   demoLink: "https://memory-card-black-two.vercel.app/",
+  //   image: img6,
+  // },
 ];
 
 const Projets = () => {
@@ -135,7 +135,7 @@ const Projets = () => {
                 className=" w-full h-54 rounded-lg object-cover mb-4 "
               />
               <div>
-                <h3 className=" text-xl font-bold mb-2">{project.title}</h3>
+                <h3 className=" text-xl font-bold mb-2 line-clamp-1">{project.title}</h3>
                 <div>
                   {project.technologies.map((tech, index) => (
                     <span
@@ -147,12 +147,11 @@ const Projets = () => {
                   ))}
                 </div>
                 <div className="flex gap-2 items-center mt-3">
-                  <a
-                    href={project.demoLink}
+                  <div
                     className="btn btn-sm btn-secondary w-full rounded-sm"
                   >
                     Voir le projet
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>

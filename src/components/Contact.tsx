@@ -6,7 +6,7 @@ const Contact = () => {
     <div className=" flex justify-center items-center flex-col p-10" id="contact">
         <Title title={"Contactez moi"}/>
       <motion.form
-        initial={{ opacity: 0, y: 200 }}
+        initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1.5 }}
         whileInView={{ opacity: 1, y: 0 }}
         action="https://api.web3forms.com/submit"

@@ -1,4 +1,5 @@
 import { CodeXml, Github, Linkedin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -22,6 +23,9 @@ const Footer = () => {
             </a>
             <a href="https://github.com/nicostar-lab" target="_blank">
               <Github />
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=22870348270&text=Bonjour%2C+je+suis+int%C3%A9ress%C3%A9+par+vos+services.&type=phone_number&app_absent=0" target="_blank">
+              <FaWhatsapp className="h-6 w-6"/>
             </a>
           </div>
         </nav>

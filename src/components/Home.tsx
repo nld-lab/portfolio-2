@@ -6,10 +6,7 @@ import "./experiences.css";
 
 const Home = () => {
   return (
-    <div
-      className="flex flex-col-reverse gap-6 md:gap-0 mt-20 md:mt-0 items-center md:h-screen md:flex-row justify-center md:justify-between"
-      id="home"
-    >
+    <div className="flex flex-col-reverse gap-6 md:gap-0 mt-20 md:mt-0 items-center md:h-screen md:flex-row justify-center px-4 md:px-0" id="home">
       <div className="flex flex-col items-center md:items-start text-center md:text-left gap-6">
         <motion.h1
           initial={{ opacity: 0, x: -200 }}
@@ -21,7 +18,8 @@ const Home = () => {
           <span className="text-secondary">Nicolas DETEH</span>
         </motion.h1>
         <h3 className="text text-xl border-r-2 border-secondary md:text-2xl font-semibold text-center md:text-start">
-          Développeur Web et Designer UI/UX.
+          Développeur Web et{" "}
+          <span className="text-secondary"> Designer UI/UX.</span>
         </h3>
         <motion.p
           initial={{ opacity: 0, y: 40 }}
@@ -47,8 +45,8 @@ const Home = () => {
           </a>
           <a
             href={cv}
-            download
             className="flex  w-full justify-center gap-2 btn btn-secondary md:w-fit shadow-2xl shadow-secondary"
+            target="_blank"
           >
             <FileDown />
             Telecharger mon CV

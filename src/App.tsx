@@ -5,22 +5,25 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projets from "./components/Projets";
+// import { BeamsBackground } from "./components/ui/beams-background";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <div className="p-5 md:px-[15%]">
-        
-        <Home/>
+      <div className="bg-grid md:px-[15%] md:h-screen flex items-center justify-center">
+      <Home />
       </div>
-      <About/>
+      {/* <BeamsBackground className="relative z-0" intensity="medium">
+        </BeamsBackground> */}
+
+      <About />
       <div className="p-5 md:px-[15%]">
-        <Experiences/>
-        <Projets/>
+        <Experiences />
+        <Projets />
       </div>
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </div>
   );
 }
